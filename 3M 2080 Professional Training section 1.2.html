@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3M 2080 汽车改色膜 - 技术优势提炼</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+
+        :root {
+            --3m-red: #ED1C24;
+            --3m-dark: #0A0A0A;
+        }
+
+        body {
+            font-family: 'Inter', 'Microsoft YaHei', sans-serif;
+            background-color: var(--3m-dark);
+            color: #ffffff;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #ffffff, #ED1C24);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* 视频容器 - 确保超大画面 */
+        .video-container {
+            background: #000;
+            border-radius: 24px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            aspect-ratio: 16 / 9;
+            width: 100%;
+            transition: transform 0.5s ease;
+        }
+
+        .video-container:hover {
+            transform: scale(1.02);
+            border-color: var(--3m-red);
+        }
+
+        /* 评分条动画 */
+        .score-fill {
+            height: 100%;
+            background: var(--3m-red);
+            width: 0;
+            transition: width 2s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+        section {
+            padding: 120px 0;
+        }
+
+        .feature-tag {
+            background: rgba(237, 28, 36, 0.1);
+            color: var(--3m-red);
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url('https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 导航栏 -->
+    <nav class="fixed w-full z-50 px-8 py-6 flex justify-between items-center glass-panel border-none bg-white/70">
+        <div class="flex items-center space-x-3">
+            <img class="h-notOnDesktop l-img"
+                src="https://www.3m.com.cn/3m_theme_assets/themes/3MTheme/assets/images/unicorn/Logo-zh.png" alt="3M Logo">
+            <div class="h-6 w-[1px] bg-white/20 hidden sm:block"></div>
+        </div>
+        <div class="text-s font-bold tracking-widest text-black">CWF试点门店赋能月度会议</div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg h-screen flex items-center justify-center text-center px-4 relative ">
+        <div class="z-10 animate__animated animate__fadeIn pt-20">
+            <div class="text-xl font-bold tracking-widest text-white/40 pb-10">CWF试点门店赋能月度会议</div>
+            <h1 class="text-6xl md:text-8xl font-black mb-6 leading-none tracking-tighter">3M 2080<br><span
+                    class="gradient-text">技术优势提炼</span></h1>
+            <p class="text-gray-300 text-lg md:text-2xl mb-10 font-light max-w-3xl mx-auto leading-relaxed">
+                不只是改变颜色，更是行业顶尖科技的集成。<br>提供“零划痕交付”的极致视觉体验。
+            </p>
+            <a href="#patents"
+                class="bg-red-600 hover:bg-red-700 px-10 py-5 rounded-full font-bold text-white uppercase tracking-widest text-sm transition-all inline-block">开始探索</a>
+        </div>
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-20">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path d="M19 14l-7 7-7-7"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- 专利技术：大画面布局 -->
+    <section id="patents" class="px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+
+            <!-- PFL 模块 -->
+            <div class="grid lg:grid-cols-12 gap-12 items-center mb-48">
+                <div class="lg:col-span-5 order-2 lg:order-1">
+                    <span class="feature-tag">先进专利技术 01</span>
+                    <h3 class="text-4xl md:text-5xl font-bold mb-6 italic">PFL 亮面保护膜</h3>
+                    <p class="text-gray-400 text-lg leading-relaxed mb-8">
+                        亮面系列独有。施工全过程保护膜面不受刮板划伤，揭开即现完美镜面质感。
+                    </p>
+                    <div class="space-y-4 text-gray-300 border-l-2 border-red-600 pl-6 font-light">
+                        <p>• <b>保护到底：</b> 施工完成后再揭除，确保零划痕交付。</p>
+                        <p>• <b>极致平整：</b> 减少施工橘皮感，还原镜面光泽。</p>
+                        <p>• <b>高延展性：</b> 即使加热拉伸也能紧密贴合。</p>
+                    </div>
+                </div>
+                <div class="lg:col-span-7 order-1 lg:order-2">
+                    <div class="video-container">
+                        <!-- 方案 A 实现：自动播放+静音+显示控制条 -->
+                        <video class="w-full h-full object-cover" loop playsinline controls
+                            poster="https://via.placeholder.com/1920x1080/1a1a1a/ffffff?text=3M+PFL+Technology">
+                            <source src="./video/PFL对比分析.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controltac 模块 (反向布局) -->
+            <div class="grid lg:grid-cols-12 gap-12 items-center mb-48">
+                <div class="lg:col-span-7">
+                    <div class="video-container">
+                        <video class="w-full h-full object-cover" loop playsinline controls>
+                            <source src="./video/controltac 对比视频.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="lg:col-span-5">
+                    <span class="feature-tag">先进专利技术 02</span>
+                    <h3 class="text-4xl md:text-5xl font-bold mb-6 italic text-right lg:text-left">Controltac™ 易定位</h3>
+                    <p class="text-gray-400 text-lg leading-relaxed mb-8 text-right lg:text-left">
+                        压力激活胶水技术。含有数以万计的微型玻璃珠，膜片可在漆面自由滑动定位。
+                    </p>
+                    <div
+                        class="space-y-4 text-gray-300 border-r-2 lg:border-r-0 lg:border-l-2 border-red-600 pr-6 lg:pr-0 lg:pl-6 font-light">
+                        <p>• <b>拒绝“一碰即粘”：</b> 让施工拥有极高的容错率。</p>
+                        <p>• <b>精准对位：</b> 适合复杂造型与大面积精确施工。</p>
+                        <p>• <b>长效粘合：</b> 压力按压后玻璃珠压入胶层，实现强力抓取。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comply 模块 -->
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 order-2 lg:order-1">
+                    <span class="feature-tag">先进专利技术 03</span>
+                    <h3 class="text-4xl md:text-5xl font-bold mb-6 italic">Comply™ 导气槽</h3>
+                    <p class="text-gray-400 text-lg leading-relaxed mb-8">
+                        隐形导气槽技术。确保空气顺畅排除，彻底杜绝气泡困扰，且不留任何气道纹理。
+                    </p>
+                    <div class="space-y-4 text-gray-300 border-l-2 border-red-600 pl-6 font-light">
+                        <p>• <b>隐形结构：</b> 微型排气孔，完全不影响表面外观。</p>
+                        <p>• <b>告别起泡：</b> 施工速度提升 30% 以上。</p>
+                        <p>• <b>持久贴覆：</b> 即使在深凹陷处也绝不回气缩边。</p>
+                    </div>
+                </div>
+                <div class="lg:col-span-7 order-1 lg:order-2">
+                    <div class="video-container">
+                        <video class="w-full h-full object-cover" loop  playsinline controls>
+                            <source src="./video/微型导气槽 对比视频.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 性能数据图表 -->
+    <section id="comparison" class="bg-[#050505] py-32 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl font-black mb-4 uppercase">综合性能评分对比</h2>
+                <p class="text-gray-500 tracking-widest uppercase text-xs">Based on durability, installation ease, and
+                    removal</p>
+            </div>
+            <div class="space-y-16 max-w-4xl mx-auto">
+                <div>
+                    <div class="flex justify-between mb-4 font-bold"><span>3M 2080 系列 (铸造级)</span><span
+                            class="text-red-600">9.5 / 10</span></div>
+                    <div class="h-2 bg-white/5 rounded-full overflow-hidden">
+                        <div class="score-fill" data-width="95%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between mb-4 font-bold text-gray-500"><span>标准铸造级膜</span><span>7.5 /
+                            10</span></div>
+                    <div class="h-2 bg-white/5 rounded-full overflow-hidden">
+                        <div class="score-fill" data-width="75%" style="background:#555"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between mb-4 font-bold text-gray-700"><span>普通压延级膜</span><span>4.0 /
+                            10</span></div>
+                    <div class="h-2 bg-white/5 rounded-full overflow-hidden">
+                        <div class="score-fill" data-width="40%" style="background:#333"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 实操演示建议：大画面 Z 字型布局 -->
+    <section id="demo" class="px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-24 border-b border-white/10 pb-10 text-center lg:text-left">
+                <h2 class="text-4xl md:text-5xl font-black mb-4 uppercase">实操演示建议</h2>
+                <p class="text-red-600 font-bold tracking-widest italic text-xl">“终端成交的关键在于体验”</p>
+            </div>
+
+            <!-- 01 外观柔韧性展示 (文左图右) -->
+            <div class="grid lg:grid-cols-12 gap-12 items-center mb-48">
+                <div class="lg:col-span-5 order-2 lg:order-1">
+                    <span class="feature-tag">Demo 01</span>
+                    <h4 class="text-3xl font-bold mb-6 italic">外观柔韧性展示</h4>
+                    <p class="text-gray-400 text-lg leading-relaxed mb-8">
+                        展示 3M 2080 与硬塑料膜的拉伸对比。解释柔韧分子结构如何确保在复杂曲面（如后视镜、保险杠）长效贴合不收缩。
+                    </p>
+                    <div class="p-6 glass-panel rounded-2xl border-l-4 border-red-600">
+                        <p class="text-red-600 italic">“柔韧性膜和硬塑料膜的区别决定了复杂的后视镜能否长久服帖。”</p>
+                    </div>
+                </div>
+                <div class="lg:col-span-7 order-1 lg:order-2">
+                    <div class="video-container">
+                        <video class="w-full h-full object-cover" loop  playsinline controls>
+                            <source src="./video/尺寸稳定性对比展示.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 02 胶水气味鉴别 (图左文右) -->
+            <div class="grid lg:grid-cols-12 gap-12 items-center mb-48">
+                <div class="lg:col-span-7">
+                    <div class="video-container">
+                        <video class="w-full h-full object-cover" loop  playsinline controls>
+                            <source src="./video/气味及外观对比展示.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="lg:col-span-5">
+                    <span class="feature-tag">Demo 02</span>
+                    <h4 class="text-3xl font-bold mb-6 italic">胶水气味鉴别</h4>
+                    <p class="text-gray-400 text-lg leading-relaxed mb-8">
+                        引导客户关注 VOC（挥发性有机化合物）。3M 专利背胶采用环保配方，无刺鼻异味，不仅保护施工者，更确保车内空气质量。
+                    </p>
+                    <div
+                        class="p-6 glass-panel rounded-2xl border-r-4 lg:border-r-0 lg:border-l-4 border-white/30 text-right lg:text-left">
+                        <p class="text-gray-300 font-light">“买改色膜不仅看外表，更要考虑您每天坐在车里的空气环境。”</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 03 光泽度对比分析 (文左图右) -->
+            <div class="grid lg:grid-cols-12 gap-12 items-center mb-48">
+                <div class="lg:col-span-5 order-2 lg:order-1">
+                    <span class="feature-tag">Demo 03</span>
+                    <h4 class="text-3xl font-bold mb-6 italic">光泽度对比分析</h4>
+                    <p class="text-gray-400 text-lg leading-relaxed mb-8">
+                        展示 3M 2080 与普通改色膜在耐候性、耐光老化方面的差异。铸造级材料确保色彩在 7 年质保期内依然鲜亮如新。
+                    </p>
+                    <div class="p-6 glass-panel rounded-2xl border-l-4 border-red-600">
+                        <p class="text-red-600 italic">“耐候性配方的设计和长期的材料科学验证，确保每一张膜都能持久亮丽。”</p>
+                    </div>
+                </div>
+                <div class="lg:col-span-7 order-1 lg:order-2">
+                    <div class="video-container">
+                        <video class="w-full h-full object-cover" loop  playsinline controls>
+                            <source src="./video/光泽度保持对比展示.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 04 残胶性能对比 (图左文右) -->
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7">
+                    <div class="video-container">
+                        <video class="w-full h-full object-cover" loop  playsinline controls>
+                            <source src="./video/残胶对比展示.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="lg:col-span-5">
+                    <span class="feature-tag">Demo 04</span>
+                    <h4 class="text-3xl font-bold mb-6 italic">残胶性能对比</h4>
+                    <p class="text-gray-400 text-lg leading-relaxed mb-8">
+                        演示 3M 背胶在质保期内移除时，不留残胶、不损原厂车漆的特性。这对于保留车辆保值率至关重要。
+                    </p>
+                    <div
+                        class="p-6 glass-panel rounded-2xl border-r-4 lg:border-r-0 lg:border-l-4 border-white/30 text-right lg:text-left">
+                        <p class="text-gray-300 font-light">“关注改色膜移除时对原厂车漆的保护，二手车溢价可超 15%。”</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部核心价值 -->
+    <section class="bg-red-600 py-32 text-center px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-5xl font-black mb-16 leading-tight">“买 3M 不仅仅是选颜色，<br>更是买一份揭掉后漆面如新的保险。”</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 border border-white/20 rounded-3xl">
+                    <div class="text-5xl font-black mb-2">7+</div>
+                    <div class="text-xs uppercase tracking-widest opacity-80">官方质保年限</div>
+                </div>
+                <div class="p-8 border border-white/20 rounded-3xl">
+                    <div class="text-5xl font-black mb-2">100+</div>
+                    <div class="text-xs uppercase tracking-widest opacity-80">全球主流色彩</div>
+                </div>
+                <div class="p-8 border border-white/20 rounded-3xl">
+                    <div class="text-5xl font-black mb-2">0</div>
+                    <div class="text-xs uppercase tracking-widest opacity-80">残胶风险 (%)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer
+        class="py-12 px-8 flex flex-col md:flex-row justify-between items-center text-whtie text-sm border-t border-white/5">
+        <div class="flex items-center space-x-4">
+            <img class="h-notOnDesktop l-img"
+                src="https://www.3m.com/3m_theme_assets/themes/3MTheme/assets/images/unicorn/Logo_mobile.png" alt="3M Logo">
+            <span>商业标识与交通安全产品部</span>
+        </div>
+        <div class="mt-4 md:mt-0 font-light">3M 2026. 专业施工，开启无限色彩可能。</div>
+    </footer>
+
+    <script>
+        // 评分条触发
+        const scoreObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.querySelectorAll('.score-fill').forEach(bar => {
+                        bar.style.width = bar.getAttribute('data-width');
+                    });
+                }
+            });
+        }, { threshold: 0.5 });
+        scoreObserver.observe(document.querySelector('#comparison'));
+
+        // 渐入效果
+        const fadeObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+                }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('section > div').forEach(el => fadeObserver.observe(el));
+    </script>
+</body>
+
+</html>
